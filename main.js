@@ -14,6 +14,7 @@ app.config(($routeProvider) => {
     controller: 'rt101Ctrl',
     templateUrl: 'partials/route101.html'
   })
+  .otherwise({redirectTo:'/'});
 })
 
 app.controller('MainCtrl', function($scope) {
